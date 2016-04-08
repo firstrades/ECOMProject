@@ -5,6 +5,7 @@ public class Body {
 	private RateReply rateReply = new RateReply();
 
 	public RateReply getRateReply() {
+		
 		return rateReply;
 	}
 	
