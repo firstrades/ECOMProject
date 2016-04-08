@@ -27,7 +27,7 @@ public class JAXBErrorHandler {
         spain.setName( "Spain" );
         spain.setCapital( "Madrid" );
         spain.setFoundation( LocalDate.of( 1469, 10, 19 ) );
-        spain.setContinent( "Europe" );
+        //spain.setContinent( "Europe" );
 
         /**
          * ok
@@ -36,7 +36,7 @@ public class JAXBErrorHandler {
         australia.setName( "Australia" );
         australia.setCapital( "Camberra" );
         australia.setFoundation( LocalDate.of( 1788, 01, 26 ) );
-        australia.setContinent( "Oceania" );
+        //australia.setContinent( "Oceania" );
         
         /**
          * schema is created
@@ -62,7 +62,7 @@ public class JAXBErrorHandler {
 			System.out.println( "spain has no problems" );
 		} catch (SAXException e) {			
 			e.printStackTrace();
-			System.out.println( "spain has no problems" );
+			System.out.println( "spain has problems" );
 		}
         
         try {
@@ -70,7 +70,7 @@ public class JAXBErrorHandler {
 			System.out.println( "australia has no problems" );
 		} catch (SAXException e) {			
 			e.printStackTrace();
-			System.out.println( "australia has no problems" );
+			System.out.println( "australia has problems" );
 		}
 	}
 

@@ -23,10 +23,10 @@ public class XSDValidation {
         spain.setName( "Spain" );
         spain.setCapital( "Madrid" );
         spain.setFoundation( LocalDate.of( 1469, 10, 19 ) );
-        spain.setContinent( "Europe" );
+        //spain.setContinent( "Europe" );
 
         SchemaFactory sf = SchemaFactory.newInstance( XMLConstants.W3C_XML_SCHEMA_NS_URI );
-        Schema schema = sf.newSchema( new File( "countries_validation.xsd" ) );
+        Schema schema = sf.newSchema( new File( "countries_validation1.xsd" ) );
 
         JAXBContext jaxbContext = JAXBContext.newInstance( Country.class );
 
@@ -53,7 +53,7 @@ public class XSDValidation {
         australia.setName( "Australia" );
         australia.setCapital( "Camberra" );
         australia.setFoundation( LocalDate.of( 1788, 01, 26 ) );
-        australia.setContinent( "Oceania" );
+        //australia.setContinent( "Oceania" );
 
         try
         {
